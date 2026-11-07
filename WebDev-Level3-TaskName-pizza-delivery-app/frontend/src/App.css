@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  font-family: Arial, sans-serif;
+  color: #29211d;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 4%;
+  background: #fffaf3;
+  gap: 20px;
+}
+
+.logo {
+  color: #d94b25;
+  white-space: nowrap;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-actions{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+.nav-links a,
+.login-link {
+  text-decoration: none;
+  color: #29211d;
+}
+
+.login-link {
+  background: #d94b25;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+/* Hero */
+.hero {
+  min-height: 380px;
+  background: #fff0df;
+  padding: 70px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tagline {
+  color: #d94b25;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.description {
+  color: #6d625b;
+  margin-bottom: 25px;
+}
+
+.order-btn {
+  display: inline-block;
+  background: #d94b25;
+  color: white;
+  text-decoration: none;
+  padding: 13px 25px;
+  border-radius: 25px;
+}
+
+.hero-pizza {
+  font-size: 150px;
+}
+
+/* Menu */
+.menu {
+  text-align: center;
+  padding: 55px 8%;
+}
+
+.menu h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.pizza-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+
+.pizza-card {
+  background: #fffaf3;
+  padding: 25px;
+  width: 230px;
+  border-radius: 15px;
+  box-shadow: 0 3px 15px #00000012;
+}
+
+.pizza-image {
+  font-size: 65px;
+  margin-bottom: 15px;
+}
+
+.pizza-card p {
+  color: #766c64;
+  margin: 12px 0;
+}
+
+.pizza-card h3:last-child {
+  color: #d94b25;
+}
+
+footer {
+  text-align: center;
+  background: #29211d;
+  color: white;
+  padding: 25px;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 18px 5%;
+  }
+
+  .nav-links {
+    gap: 12px;
+    font-size: 13px;
+  }
+
+  .hero {
+    padding: 45px 7%;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero-pizza {
+    font-size: 65px;
+  }
+}
+
+.pizza-image img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.cart-btn {
+  background: #e65325;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 25px;
+  cursor: pointer;
+  /* margin-top: 12px; */
+}
+
+.cart-btn:hover {
+  background: #a83216;
+}
+
+.cart-info {
+  text-align: right;
+  padding: 15px 8%;
+  background: #fffaf3;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.cart-info p {
+  color: #d94b25;
+  margin-top: 5px 0 0;
+}
+
+.cart-page {
+  padding: 40px 8%;
+  background: #fffaf3;
+  min-height: 100vh;
+}
+
+.cart-page h1 {
+  margin-bottom: 25px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 20px 0;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #00000010;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.quantity-controls button {
+  padding: 8px 14px;
+  border: none;
+  background: #d94b25;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.cart-summary {
+  text-align: right;
+  margin-top: 35px;
+}
+
+.checkout-btn {
+  background: #d94b25;
+  color: white;
+  padding: 13px 25px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.cart-page button {
+  cursor: pointer;
+}
+
+.auth-container {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff8f0;
+  padding: 30px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background: white;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.auth-card h1 {
+  color: #e65325;
+}
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+.auth-card input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.auth-card button {
+  padding: 11px;
+  background: #e65325;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.auth-card p {
+  margin-top: 18px;
+}
